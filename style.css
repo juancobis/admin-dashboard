@@ -3,6 +3,23 @@
   padding: 0;
 }
 
+:root {
+  --clr-blue-600: #1a91da;
+  --clr-gray-100: #e2e8f0;
+  --clr-yellow-500: #f59e0b;
+  --clr-white: #ffffff;
+
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --space-card: 1.5rem;
+
+  --brand-primary: var(--clr-blue-600);
+  --bg-dashboard: var(--clr-gray-100);
+  --bg-surface: var(--clr-white);
+  --text-muted: #636363;
+  --accent-card: var(--clr-yellow-500);
+}
+
 .container {
   display: grid;
   font-family: Inter, sans-serif;
@@ -32,7 +49,7 @@
   }
 
   input {
-    background-color: #e2e8f0;
+    background-color: var(--bg-dashboard);
     padding: 8px 24px;
     border: none;
     border-radius: 20px;
@@ -40,7 +57,7 @@
     font-family: Inter, sans-serif;
     
     &:focus {
-      outline: 2px solid #1992d4;
+      outline: 2px solid var(--brand-primary);
     }
   }
 }
@@ -81,14 +98,14 @@
 
   button {
     padding: 12px 24px;
-    background-color: #1992d4;
+    background-color: var(--brand-primary);
     border-radius: 24px;
     border: none;
   
     font-family: Inter, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    color: #ffffff;
+    color: var(--bg-surface);
   }
 }
 
@@ -100,8 +117,8 @@
   flex-direction: column;
   gap: 48px;
 
-  background-color: #1992d4;
-  color: #ffffff;
+  background-color: var(--brand-primary);
+  color: var(--bg-surface);
   padding: 16px 64px 0 12px;
   padding-right: 64px;
 }
@@ -117,7 +134,7 @@
 .sidebar svg {
   width: 24px;
   height: 24px;
-  fill: #ffffff;
+  fill: var(--bg-surface);
 }
 
 .option {
@@ -143,7 +160,7 @@
 }
 
 .main {
-  background-color: #e2e8f0;
+  background-color: var(--bg-dashboard);
 
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -162,16 +179,16 @@
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--bg-surface);
   padding: 24px;
   border-radius: 10px;
-  border-left: 8px solid #f0b429;
+  border-left: 8px solid var(--accent-card);
 
   display: grid;
   grid-template-rows: 1fr max-content;
   gap: 16px;
 
   p {
-    color: #636363;
+    color: var(--text-muted);
   }
 }
