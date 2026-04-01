@@ -238,3 +238,20 @@
   overflow: hidden;
   line-clamp: 3;
 }
+
+.trending-projects {
+  display: grid;
+  padding: 24px;
+  gap: 24px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 16px;
+}
+
+.project p:first-child {
+  color: #000000;
+  margin-bottom: 8px;
+}
